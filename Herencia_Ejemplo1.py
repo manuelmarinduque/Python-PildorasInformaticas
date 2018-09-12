@@ -2,7 +2,7 @@ class Vehiculos:
 
     def __init__(self, marca, modelo):
         self.__marca = marca
-        self.modelo = modelo
+        self.__modelo = modelo
         self.enMarcha = False
         self.acelera = False
         self.frena = False
@@ -17,7 +17,7 @@ class Vehiculos:
         self.frena = True
 
     def estado(self):
-        print("Marca: ", self.__marca, "\nModelo: ", self.modelo, "\nEn marcha: ",
+        print("Marca: ", self.__marca, "\nModelo: ", self.__modelo, "\nEn marcha: ",
               self.enMarcha, "\nAcelerando: ", self.acelera, "\nFrenando: ", self.frena)
 
 
